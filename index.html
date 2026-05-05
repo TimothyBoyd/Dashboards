@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Mapping Homelessness and Supporting Resources in San Diego</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
   <style>
@@ -23,8 +23,8 @@
 
     .hero {
       text-align: center;
-      margin-bottom: 2.5rem;
-      padding: 2.5rem 1rem 1.5rem 1rem;
+      margin-bottom: 2rem;
+      padding: 2.5rem 1rem 1rem 1rem;
     }
 
     .hero h1 {
@@ -55,6 +55,39 @@
       text-decoration: underline;
     }
 
+    /* Partner section */
+    .partner-section {
+      background: white;
+      color: #111;
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 0 auto 2.5rem auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .logo-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .logo-row img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+    }
+
+    .partner-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
     .slide-scroll {
       width: 100%;
       display: block;
@@ -67,7 +100,20 @@
       height: 750px;
       border: none;
       border-radius: 12px;
-      margin: 2rem 0;
+      margin: 2rem 0 0 0;
+    }
+
+    .dashboard-link {
+      display: block;
+      margin: 0.5rem 0 2rem 0;
+      color: #9ad1ff;
+      font-weight: 600;
+      word-break: break-word;
+      text-decoration: none;
+    }
+
+    .dashboard-link:hover {
+      text-decoration: underline;
     }
 
     .chart-grid {
@@ -92,6 +138,10 @@
       .chart-grid {
         grid-template-columns: 1fr;
       }
+
+      .logo-row {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -103,63 +153,75 @@
     <section class="hero">
       <h1>Mapping Homelessness and Supporting Resources in San Diego</h1>
       <h2>Interactive Point-In-Time Count (PITC) Density &amp; Resource Dashboards</h2>
-      <a href="https://sdheart.sdsu.edu/" target="_blank" rel="noopener noreferrer">
+      <a href="https://sdheart.sdsu.edu/" target="_blank">
         https://sdheart.sdsu.edu/
       </a>
+    </section>
+
+    <!-- Partner / Funding Section -->
+    <section class="partner-section">
+      <div class="logo-row">
+        <img src="unnamed.jpg" alt="HDMA Center at SDSU logo">
+        <img src="nsf-logo-w-name-2022.jpg" alt="National Science Foundation logo">
+      </div>
+
+      <p class="partner-text">
+        This project is developed by the Center for Human Dynamics in the Mobile Age (HDMA) at San Diego State University. 
+        HDMA is a transdisciplinary research center focused on understanding dynamic patterns in human behavior, mobility, 
+        and communication. This work is supported by the National Science Foundation (NSF) and contributes to data-driven 
+        approaches for addressing homelessness and improving access to critical community resources.
+      </p>
     </section>
 
     <!-- Slides 1–2 -->
     <img src="slide1.png" alt="Slide 1" class="slide-scroll">
     <img src="slide2.png" alt="Slide 2" class="slide-scroll">
 
-    <!-- Dashboard 1 (moved here) -->
-    <iframe
-      class="dashboard-frame"
-      src="https://experience.arcgis.com/experience/bb7d640682a44ad8aa7b4820976371ef/"
-      title="Dashboard 1"
-      loading="lazy"
-      allowfullscreen>
+    <!-- Dashboard 1 -->
+    <iframe class="dashboard-frame"
+      src="https://experience.arcgis.com/experience/bb7d640682a44ad8aa7b4820976371ef/">
     </iframe>
+    <a class="dashboard-link" href="https://experience.arcgis.com/experience/bb7d640682a44ad8aa7b4820976371ef/" target="_blank">
+      Dashboard #1: https://experience.arcgis.com/experience/bb7d640682a44ad8aa7b4820976371ef/
+    </a>
 
     <!-- Slides 3–4 -->
     <img src="slide3.png" alt="Slide 3" class="slide-scroll">
     <img src="slide4.png" alt="Slide 4" class="slide-scroll">
 
-    <!-- Charts inserted after Slide 4 -->
+    <!-- Charts -->
     <section class="chart-grid">
-      <img src="ch1.png" alt="Chart 1">
-      <img src="ch4.png" alt="Chart 4">
-      <img src="ch2.png" alt="Chart 2">
-      <img src="ch3.png" alt="Chart 3">
+      <img src="ch1.png">
+      <img src="ch4.png">
+      <img src="ch2.png">
+      <img src="ch3.png">
     </section>
 
     <!-- Slides 5–6 -->
-    <img src="slide5.png" alt="Slide 5" class="slide-scroll">
-    <img src="slide6.png" alt="Slide 6" class="slide-scroll">
+    <img src="slide5.png" class="slide-scroll">
+    <img src="slide6.png" class="slide-scroll">
 
-    <!-- Dashboard 2 (between 6 and 7) -->
-    <iframe
-      class="dashboard-frame"
-      src="https://experience.arcgis.com/experience/6724171f65b94c369ee94e91ca425cb8/"
-      title="Dashboard 2"
-      loading="lazy"
-      allowfullscreen>
+    <!-- Dashboard 3 -->
+    <iframe class="dashboard-frame"
+      src="https://experience.arcgis.com/experience/6724171f65b94c369ee94e91ca425cb8/">
     </iframe>
+    <a class="dashboard-link" href="https://experience.arcgis.com/experience/6724171f65b94c369ee94e91ca425cb8/" target="_blank">
+      Dashboard #3: https://experience.arcgis.com/experience/6724171f65b94c369ee94e91ca425cb8/
+    </a>
 
     <!-- Slide 7 -->
-    <img src="slide7.png" alt="Slide 7" class="slide-scroll">
+    <img src="slide7.png" class="slide-scroll">
 
-    <!-- Dashboard 3 (between 7 and 8) -->
-    <iframe
-      class="dashboard-frame"
-      src="https://experience.arcgis.com/experience/df00cf0d68464f968184e6ae2a174918/"
-      title="Dashboard 3"
-      loading="lazy"
-      allowfullscreen>
+    <!-- Dashboard 2 -->
+    <iframe class="dashboard-frame"
+      src="https://experience.arcgis.com/experience/df00cf0d68464f968184e6ae2a174918/">
     </iframe>
+    <a class="dashboard-link" href="https://experience.arcgis.com/experience/df00cf0d68464f968184e6ae2a174918/" target="_blank">
+      Dashboard #2: https://experience.arcgis.com/experience/df00cf0d68464f968184e6ae2a174918/
+    </a>
 
     <!-- Slide 8 -->
-    <img src="slide8.png" alt="Slide 8" class="slide-scroll">
+    <img src="slide8.png" class="slide-scroll">
 
   </main>
 </body>
